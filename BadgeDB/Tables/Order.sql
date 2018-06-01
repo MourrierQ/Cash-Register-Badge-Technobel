@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Order]
+(
+	[Id] INT NOT NULL IDENTITY(1,1),
+	[OrderTime] DATETIME2 NOT NULL DEFAULT(GETDATE()),
+	[Volunteer] BIT DEFAULT(0),
+
+	CONSTRAINT PK_Order PRIMARY KEY([Id])
+)

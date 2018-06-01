@@ -14,6 +14,12 @@ namespace Badge.WebAPI
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            //config.Routes.MapHttpRoute(
+            //    name: "custom",
+            //    routeTemplate: "custom/{controller}/{action}/{id}",
+            //    defaults: new { Controllers = "Product", Action = "FetchByCategory", id = RouteParameter.Optional }
+            //    );
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
